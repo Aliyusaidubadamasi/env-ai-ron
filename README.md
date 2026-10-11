@@ -1,9 +1,9 @@
 markdown
-# 🌿 Env-AI-Ron
+# 🌿 ENV-AI-RON
 
 **Nature-Centred AI for Regenerative Urban Ecosystems**
 
-Env-AI-Ron is an urban ecological intelligence platform that uses Nature-Centred AI, Geographic Information Systems (GIS), and public health data to systematically plan, optimize, and restore urban green infrastructure. We move beyond beautification to ensure that every tree and green space is strategically aligned to maximize ecological function, biodiversity, and human health.
+ENV-AI-RON is an urban ecological intelligence platform that uses Nature-Centred AI, Geographic Information Systems (GIS), and public health data to systematically plan, optimize, and restore urban green infrastructure. We move beyond beautification to ensure that every tree and green space is strategically aligned to maximize ecological function, biodiversity, and human health.
 
 ---
 
@@ -21,7 +21,7 @@ This leads to:
 
 ## 💡 Our Solution
 
-Env-AI-Ron provides a **geospatial ecological decision-support platform** that:
+ENV-AI-RON provides a **geospatial ecological decision-support platform** that:
 
 1. **Ingests** aerial, drone, or satellite imagery of urban areas
 2. **Analyzes** land cover using semantic segmentation AI (concrete, canopy, bare soil)
@@ -81,7 +81,6 @@ env-ai-ron/
 ├── docs/ # Architecture & API specs
 └── README.md
 
-text
 
 ---
 
@@ -135,28 +134,6 @@ text
 - **ATREE USA** — Ecological research & conservation
 
 ---
-
-## 🚀 Getting Started
-
-```bash
-# Clone the repository
-git clone https://github.com/Aliyusaidubadamasi/env-ai-ron.git
-cd env-ai-ron
-
-# Backend setup
-cd backend
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-pip install -r requirements.txt
-
-# Frontend setup
-cd ../apps/web-dashboard
-npm install
-
-# Run with Docker
-docker-compose up --build
-📜 License
-MIT License — see LICENSE for details.
 
 🌍 Vision
 Env-AI-Ron is not a land-use planning utility. It is a regenerative city-healing system.
