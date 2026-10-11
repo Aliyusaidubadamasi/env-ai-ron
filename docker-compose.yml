@@ -1,0 +1,56 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: env-ai-ron-db
+    environment:
+      POSTGRES_DB: env_ai_ron
+      POSTGRES_USER: env_ai_ron
+      POSTGRES_PASSWORD: env_ai_ron
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U env_ai_ron -d env_ai_ron"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/Dockerfile.backend
+    container_name: env-ai-ron-backend
+    environment:
+      DATABASE_URL: postgresql+psycopg2://env_ai_ron:env_ai_ron@db:5432/env_ai_ron
+      JWT_SECRET: change_this_secret_key
+      PYTHONUNBUFFERED: "1"
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - .:/app
+    command: uvicorn backend.api.main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/Dockerfile.frontend
+    container_name: env-ai-ron-frontend
+    environment:
+      NEXT_PUBLIC_MAPBOX_TOKEN: ${MAPBOX_TOKEN:-your_mapbox_access_token}
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    volumes:
+      - .:/app
+    command: npm run dev --prefix apps/web-dashboard
+
+volumes:
+  postgres_data:

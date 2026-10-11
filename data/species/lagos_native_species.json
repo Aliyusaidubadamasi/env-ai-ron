@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Terminalia catappa",
+    "native_status": "native",
+    "water_need": "moderate",
+    "pollinator_value": 9,
+    "carbon_sequestration_score": 8.8,
+    "shade_value": 9,
+    "climate_zone_match": "coastal_warm",
+    "invasive_risk": "low"
+  },
+  {
+    "name": "Milicia excelsa",
+    "native_status": "native",
+    "water_need": "moderate",
+    "pollinator_value": 8,
+    "carbon_sequestration_score": 9.1,
+    "shade_value": 8,
+    "climate_zone_match": "coastal_warm",
+    "invasive_risk": "low"
+  },
+  {
+    "name": "Khaya senegalensis",
+    "native_status": "native",
+    "water_need": "moderate",
+    "pollinator_value": 7,
+    "carbon_sequestration_score": 8.6,
+    "shade_value": 8,
+    "climate_zone_match": "coastal_warm",
+    "invasive_risk": "low"
+  },
+  {
+    "name": "Albizia lebbeck",
+    "native_status": "native",
+    "water_need": "moderate",
+    "pollinator_value": 8,
+    "carbon_sequestration_score": 8.2,
+    "shade_value": 8,
+    "climate_zone_match": "coastal_warm",
+    "invasive_risk": "low"
+  },
+  {
+    "name": "Newbouldia laevis",
+    "native_status": "native",
+    "water_need": "low",
+    "pollinator_value": 8,
+    "carbon_sequestration_score": 7.5,
+    "shade_value": 7,
+    "climate_zone_match": "coastal_warm",
+    "invasive_risk": "low"
+  },
+  {
+    "name": "Ficus exasperata",
+    "native_status": "native",
+    "water_need": "moderate",
+    "pollinator_value": 8,
+    "carbon_sequestration_score": 8.7,
+    "shade_value": 9,
+    "climate_zone_match": "coastal_warm",
+    "invasive_risk": "low"
+  },
+  {
+    "name": "Ceiba pentandra",
+    "native_status": "native",
+    "water_need": "moderate",
+    "pollinator_value": 7,
+    "carbon_sequestration_score": 8.9,
+    "shade_value": 9,
+    "climate_zone_match": "coastal_warm",
+    "invasive_risk": "low"
+  },
+  {
+    "name": "Parkia biglobosa",
+    "native_status": "native",
+    "water_need": "low",
+    "pollinator_value": 8,
+    "carbon_sequestration_score": 7.8,
+    "shade_value": 7,
+    "climate_zone_match": "savanna_coastal",
+    "invasive_risk": "low"
+  },
+  {
+    "name": "Vitellaria paradoxa",
+    "native_status": "native",
+    "water_need": "low",
+    "pollinator_value": 7,
+    "carbon_sequestration_score": 7.9,
+    "shade_value": 7,
+    "climate_zone_match": "savanna_coastal",
+    "invasive_risk": "low"
+  },
+  {
+    "name": "Azadirachta indica",
+    "native_status": "native",
+    "water_need": "low",
+    "pollinator_value": 7,
+    "carbon_sequestration_score": 8.1,
+    "shade_value": 8,
+    "climate_zone_match": "coastal_warm",
+    "invasive_risk": "low"
+  }
+]

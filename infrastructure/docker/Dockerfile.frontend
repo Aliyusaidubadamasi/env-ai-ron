@@ -1,0 +1,15 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY apps/web-dashboard/package.json ./apps/web-dashboard/package.json
+COPY apps/community-monitor/package.json ./apps/community-monitor/package.json
+
+RUN npm install --prefix apps/web-dashboard
+RUN npm install --prefix apps/community-monitor
+
+COPY . /app
+
+EXPOSE 3000
+
+CMD ["sh", "-lc", "npm run dev --prefix apps/web-dashboard"]

@@ -1,0 +1,72 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f7f1;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-shell {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #0f3d2e;
+  color: #ecfdf5;
+  padding: 2rem 1.5rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  opacity: 0.8;
+}
+
+.sidebar h1 {
+  margin: 0.5rem 0;
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  opacity: 0.9;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.stat-card span {
+  display: block;
+  opacity: 0.8;
+  margin-bottom: 0.3rem;
+}
+
+.stat-card strong {
+  font-size: 1.1rem;
+}
+
+.map-panel {
+  padding: 1rem;
+}
+
+.map-container {
+  width: 100%;
+  height: calc(100vh - 2rem);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #dbe7dc;
+  box-shadow: 0 20px 40px rgba(17, 24, 39, 0.12);
+}

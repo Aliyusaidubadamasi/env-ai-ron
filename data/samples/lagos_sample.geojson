@@ -1,0 +1,68 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "lagos-001",
+        "name": "Victoria Island Urban Void",
+        "land_use": "mixed_use",
+        "priority": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [3.4001, 6.4253],
+            [3.4289, 6.4253],
+            [3.4289, 6.4488],
+            [3.4001, 6.4488],
+            [3.4001, 6.4253]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "lagos-002",
+        "name": "Ikeja Residential Cooling Corridor",
+        "land_use": "residential",
+        "priority": "medium"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [3.3391, 6.5957],
+            [3.3714, 6.5957],
+            [3.3714, 6.6189],
+            [3.3391, 6.6189],
+            [3.3391, 6.5957]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "lagos-003",
+        "name": "Lekki Coastal Canopy Restoration Zone",
+        "land_use": "coastal_restoration",
+        "priority": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [3.5013, 6.4358],
+            [3.5452, 6.4358],
+            [3.5452, 6.4691],
+            [3.5013, 6.4691],
+            [3.5013, 6.4358]
+          ]
+        ]
+      }
+    }
+  ]
+}
