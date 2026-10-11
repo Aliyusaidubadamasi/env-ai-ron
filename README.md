@@ -1,3 +1,4 @@
+markdown
 # 🌿 Env-AI-Ron
 
 **Nature-Centred AI for Regenerative Urban Ecosystems**
@@ -57,4 +58,110 @@ The metric of success is not *"how pretty does it look?"* but *"how much biodive
 ---
 
 ## 📁 Repository Structure
+env-ai-ron/
+├── apps/
+│ ├── web-dashboard/ # Planner desktop interface
+│ └── community-monitor/ # Mobile PWA for citizens
+├── backend/
+│ ├── api/ # FastAPI endpoints
+│ ├── services/ # Business logic
+│ ├── models/ # SQLAlchemy models
+│ ├── geospatial/ # GIS processing
+│ ├── optimization/ # Planting optimization engine
+│ └── simulations/ # Digital Twin logic
+├── data/
+│ ├── raw/ # Original imagery
+│ ├── processed/ # Cleaned datasets
+│ ├── samples/ # Sample Lagos data
+│ └── species/ # Native species registry
+├── infrastructure/
+│ ├── docker/ # Docker configs
+│ └── k8s/ # Kubernetes / cloud deploy
+├── notebooks/ # AI training experiments
+├── docs/ # Architecture & API specs
+└── README.md
+
+text
+
+---
+
+## 🗺️ MVP Roadmap
+
+**Phase 1: Foundation**
+- Repository scaffolding
+- FastAPI app + PostGIS schema
+- Next.js dashboard shell
+- Sample Lagos dataset + upload workflow
+
+**Phase 2: AI Engine**
+- 3-class segmentation model (concrete, canopy, bare soil)
+- Inference API + ecological mask generation
+- Candidate planting site scoring
+
+**Phase 3: Planning Intelligence**
+- Native species recommender
+- Optimization service
+- Report generation + Digital Twin output map
+
+**Phase 4: Community Layer**
+- PWA mobile monitor
+- Citizen photo upload + tree health tracking
+- Neighborhood communication layer
+
+**Phase 5: Validation**
+- Stakeholder review with urban planners
+- Compare AI recommendations to municipal priorities
+- Refine for ecological credibility
+
+---
+
+## 📊 Sample Output
+
+**Site:** Lagos, Nigeria – District 4
+- **Baseline:** 18% canopy cover, 41% impervious surface
+- **AI Recommendation:** Plant 50 native *Terminalia* trees in ecological void clusters
+- **Expected Impact:**
+  - 1.5°C local temperature reduction
+  - +8% canopy cover in 10 years
+  - Support for 12 pollinator species
+  - Reduced heat stress in adjacent residential blocks
+
+---
+
+## 🤝 Partners & Alignment
+
+- **Aspire Institute** — Leadership development & social impact
+- **NatureCentred.AI** — Philosophical & ethical AI framework
+- **ATREE USA** — Ecological research & conservation
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/Aliyusaidubadamasi/env-ai-ron.git
+cd env-ai-ron
+
+# Backend setup
+cd backend
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+pip install -r requirements.txt
+
+# Frontend setup
+cd ../apps/web-dashboard
+npm install
+
+# Run with Docker
+docker-compose up --build
+📜 License
+MIT License — see LICENSE for details.
+
+🌍 Vision
+Env-AI-Ron is not a land-use planning utility. It is a regenerative city-healing system.
+
+We are transforming concrete jungles into living, breathing, biodiverse ecosystems.
+
+Built with Nature-Centred AI principles for a regenerative future.
 
