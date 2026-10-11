@@ -1,0 +1,64 @@
+{
+  "data": "SYNTHETIC tiles (seeds 1000+ train, 5000+ held-out test). Not real Lagos imagery.",
+  "classes": [
+    "concrete",
+    "canopy",
+    "bare_soil"
+  ],
+  "train_tiles": 6,
+  "test_tiles": 3,
+  "train_samples": 360000,
+  "heldout_pixel_accuracy": 0.9476130208333333,
+  "heldout_iou": {
+    "concrete": 0.8682398017116644,
+    "canopy": 0.8677366698288166,
+    "bare_soil": 0.9239485201553044
+  },
+  "heldout_mean_iou": 0.8866416638985951,
+  "confusion_matrix_rows_truth_cols_pred": [
+    [
+      535249,
+      9985,
+      48596
+    ],
+    [
+      1611,
+      203066,
+      6098
+    ],
+    [
+      21035,
+      13258,
+      1081102
+    ]
+  ],
+  "per_tile": [
+    {
+      "seed": 5000,
+      "pixel_accuracy": 0.9485734375,
+      "iou": {
+        "concrete": 0.8692955970505805,
+        "canopy": 0.8704759431205766,
+        "bare_soil": 0.9253827455871311
+      }
+    },
+    {
+      "seed": 5001,
+      "pixel_accuracy": 0.9478484375,
+      "iou": {
+        "concrete": 0.8715397488335963,
+        "canopy": 0.8634393434213901,
+        "bare_soil": 0.9242212743957606
+      }
+    },
+    {
+      "seed": 5002,
+      "pixel_accuracy": 0.9464171875,
+      "iou": {
+        "concrete": 0.8638351243985046,
+        "canopy": 0.869307757519011,
+        "bare_soil": 0.9222346895382141
+      }
+    }
+  ]
+}

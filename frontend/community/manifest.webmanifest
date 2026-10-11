@@ -1,0 +1,11 @@
+{
+  "name": "Env-AI-Ron Community Monitor",
+  "short_name": "Tree stewards",
+  "description": "See the native trees planned for your neighbourhood and report how the new ones are doing.",
+  "start_url": "/community/",
+  "scope": "/community/",
+  "display": "standalone",
+  "background_color": "#f3f1e7",
+  "theme_color": "#24412c",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

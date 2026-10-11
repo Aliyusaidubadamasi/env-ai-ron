@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tree stewards</title>
+<meta name="theme-color" content="#24412c">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Tree stewards</h1><p id="region">Trees planned for your neighbourhood</p></header>
+<nav class="tabs" role="tablist">
+  <button role="tab" aria-selected="true" data-tab="map">Map</button>
+  <button role="tab" aria-selected="false" data-tab="near">Near me</button>
+</nav>
+<main>
+  <p id="msg" class="msg" role="status" aria-live="polite"></p>
+  <section id="tab-map"><div id="map" aria-label="Map of planned trees"></div><p id="summary" class="summary"></p></section>
+  <section id="tab-near" hidden><ul id="nearlist" class="near"></ul></section>
+</main>
+
+<div id="sheet" class="sheet" hidden role="dialog" aria-labelledby="sh-title">
+  <button id="sh-close" class="x" aria-label="Close">Close</button>
+  <h2 id="sh-title"></h2>
+  <p id="sh-sci" class="sci"></p>
+  <p id="sh-why" class="why"></p>
+  <h3>How it is doing</h3>
+  <ul id="sh-obs" class="obs"></ul>
+  <form id="obsform">
+    <label class="photo">Take a photo of the tree
+      <input id="photo" type="file" accept="image/*" capture="environment" required>
+    </label>
+    <label>Note (optional)
+      <input id="note" type="text" maxlength="280" placeholder="New leaves, a dry week, a broken stake...">
+    </label>
+    <button type="submit" id="send">Send photo</button>
+    <p class="hint">Your phone location is checked so the photo is matched to this tree. The photo is shrunk before it is sent to save data.</p>
+  </form>
+</div>
+<script src="/vendor/leaflet/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

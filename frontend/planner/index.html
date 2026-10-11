@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Env-AI-Ron planner</title>
+<meta name="description" content="Plan native planting that heals urban land: cooling, carbon, pollinators and fairness.">
+<link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="16" r="9.5" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".7"/><circle cx="16" cy="16" r="5" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".45"/><circle cx="16" cy="16" r="1.6" fill="currentColor"/></svg>
+    <div>
+      <h1>Env-AI-Ron</h1>
+      <p>Plant for the land first</p>
+    </div>
+  </div>
+  <form id="keyform" class="keyform" autocomplete="off">
+    <label for="apikey">Planner key</label>
+    <input id="apikey" type="password" placeholder="X-API-Key" spellcheck="false">
+    <button type="submit" class="quiet">Save</button>
+  </form>
+</header>
+
+<main class="shell">
+  <aside class="rail" aria-label="Planting goals">
+    <section>
+      <h2>What should this planting favour?</h2>
+      <label class="field">Starting point
+        <select id="preset"></select>
+      </label>
+      <div id="sliders" class="sliders"></div>
+      <p class="hint" id="weightsum"></p>
+      <label class="field">Planting sites
+        <input id="budget" type="number" min="10" max="1500" step="10" value="180">
+        <span class="hint">Each site is a 20 m cell of native trees.</span>
+      </label>
+    </section>
+
+    <section>
+      <button id="run-demo" class="primary">Read the Lagos demo tile</button>
+      <details class="upload">
+        <summary>Use your own imagery</summary>
+        <form id="uploadform">
+          <label class="field">Aerial image
+            <input id="f-image" type="file" accept=".jpg,.jpeg,.png,.tif,.tiff" required>
+          </label>
+          <label class="field">Bounds (west, south, east, north)
+            <input id="f-bbox" type="text" placeholder="3.350, 6.490, 3.369, 6.508">
+            <span class="hint">Not needed for a GeoTIFF.</span>
+          </label>
+          <label class="field">Soil layer (GeoJSON, property <code>soil_type</code>)
+            <input id="f-soil" type="file" accept=".geojson,.json">
+          </label>
+          <label class="field">Zoning layer (GeoJSON, property <code>zone</code>)
+            <input id="f-zone" type="file" accept=".geojson,.json">
+          </label>
+          <label class="field">Health and heat wards (GeoJSON)
+            <input id="f-wards" type="file" accept=".geojson,.json">
+            <span class="hint">Properties: <code>ward_name</code>, <code>heat_vulnerability_index</code>, <code>asthma_per_1000</code>.</span>
+          </label>
+          <label class="field">Elevation (GeoTIFF)
+            <input id="f-elev" type="file" accept=".tif,.tiff">
+          </label>
+          <button type="submit" class="primary">Read this land</button>
+        </form>
+      </details>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="clusters-section" hidden>
+      <h2>Where planting matters most</h2>
+      <ol id="clusters" class="clusters"></ol>
+    </section>
+  </aside>
+
+  <section class="stage" aria-label="Digital twin map">
+    <div id="map"></div>
+
+    <div class="layers" role="group" aria-label="Map layers">
+      <h2>Layers</h2>
+      <div id="layerlist"></div>
+    </div>
+
+    <div id="empty" class="empty">
+      <h2>No reading yet</h2>
+      <p>Start with the Lagos demo tile to see how the land reads today and how a planting plan could change it over 20 years.</p>
+    </div>
+
+    <div class="timebar" id="timebar" hidden>
+      <div class="timeline">
+        <div class="tl-head">
+          <label for="year">Years after planting</label>
+          <output id="yearout">20</output>
+        </div>
+        <input id="year" type="range" min="0" max="20" step="1" value="20" list="marks">
+        <datalist id="marks"><option value="0"></option><option value="5"></option><option value="10"></option><option value="20"></option></datalist>
+        <div class="ticks"><button data-y="0" class="tick">Today</button><button data-y="5" class="tick">5</button><button data-y="10" class="tick">10</button><button data-y="20" class="tick">20</button></div>
+      </div>
+      <dl class="readout" id="readout"></dl>
+    </div>
+  </section>
+
+  <aside id="detail" class="detail" aria-label="Selected site" hidden>
+    <button id="closedetail" class="quiet close" aria-label="Close site details">Close</button>
+    <div id="detailbody"></div>
+  </aside>
+</main>
+
+<footer class="foot" id="foot" hidden>
+  <div class="exports">
+    <button data-export="report.pdf" class="quiet">Download PDF report</button>
+    <button data-export="blueprint.geojson" class="quiet">GeoJSON</button>
+    <button data-export="blueprint?format=gpkg" class="quiet">GeoPackage</button>
+    <button data-export="blueprint?format=shp" class="quiet">Shapefile</button>
+    <button id="publish" class="quiet">Share with the community</button>
+  </div>
+  <p id="datanote" class="datanote"></p>
+</footer>
+
+<script src="/vendor/leaflet/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

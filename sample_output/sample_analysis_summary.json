@@ -1,0 +1,4869 @@
+{
+ "version": "0.1.0",
+ "region": "Lagos Mainland (demo tile)",
+ "principles": [
+  "Do no harm",
+  "Be regenerative",
+  "Be egalitarian"
+ ],
+ "grid": {
+  "bbox": [
+   3.35,
+   6.49,
+   3.3685,
+   6.508
+  ],
+  "height_px": 800,
+  "width_px": 800,
+  "cell_px": 8,
+  "rows": 100,
+  "cols": 100,
+  "cell_area_m2": 407.1
+ },
+ "params": {
+  "weights": {
+   "cooling": 0.3,
+   "carbon": 0.2,
+   "pollinator": 0.2,
+   "equity": 0.3
+  },
+  "preset": "balanced",
+  "budget_sites": 180,
+  "seed": 42
+ },
+ "baseline": {
+  "area_ha": 407.1,
+  "cover_pct": {
+   "concrete_impervious": 28.2,
+   "canopy": 13.1,
+   "bare_soil": 58.8
+  },
+  "mean_lst_proxy_c": 34.3,
+  "hottest_decile_lst_c": 35.6,
+  "ecological_void_cells": 3000,
+  "ecological_void_ha": 122.1,
+  "plantable_cells": 6490,
+  "plantable_ha": 264.2,
+  "flood_prone_cells": 1200
+ },
+ "optimiser": {
+  "score": 1.0147,
+  "breakdown": {
+   "cooling": 0.996,
+   "carbon": 0.747,
+   "pollinator": 0.8403,
+   "equity": 1.3336,
+   "fairness_penalty": 0.0017
+  },
+  "comparison_scores": {
+   "greedy_top_n": 0.3975,
+   "random": 0.8193,
+   "greedy_top_n_no_fairness": 0.9177,
+   "ga_best": 1.0147
+  },
+  "baseline_breakdowns": {
+   "greedy_top_n": {
+    "cooling": 0.7739,
+    "carbon": 0.7851,
+    "pollinator": 1.0192,
+    "equity": 1.0823,
+    "fairness_penalty": 0.5202
+   },
+   "random": {
+    "cooling": 0.8291,
+    "carbon": 0.605,
+    "pollinator": 0.8382,
+    "equity": 0.9398,
+    "fairness_penalty": 0.0
+   }
+  },
+  "history": [
+   0.8693,
+   0.876,
+   0.8879,
+   0.8879,
+   0.897,
+   0.9097,
+   0.9116,
+   0.9157,
+   0.9179,
+   0.9219,
+   0.9256,
+   0.9256,
+   0.9267,
+   0.9279,
+   0.9304,
+   0.9304,
+   0.9361,
+   0.9361,
+   0.9369,
+   0.9374,
+   0.9374,
+   0.9399,
+   0.9432,
+   0.9479,
+   0.9479,
+   0.9479,
+   0.9479,
+   0.9479,
+   0.9486,
+   0.9486,
+   0.9486,
+   0.9486,
+   0.9538,
+   0.9538,
+   0.9585,
+   0.9585,
+   0.9585,
+   0.9585,
+   0.9585,
+   0.9585,
+   0.9585,
+   0.9585,
+   0.9585,
+   0.9585,
+   0.9592,
+   0.9592,
+   0.9592,
+   0.9616,
+   0.9616,
+   0.9616,
+   0.9616,
+   0.9616,
+   0.9616,
+   0.9646,
+   0.9646,
+   0.9663,
+   0.9663,
+   0.9663,
+   0.9666,
+   0.9666,
+   0.9666,
+   0.9667,
+   0.9667,
+   0.9667,
+   0.9667,
+   0.9668,
+   0.9668,
+   0.9668,
+   0.9668,
+   0.9668,
+   0.9668,
+   1.0147
+  ],
+  "candidates": 6490
+ },
+ "summary": {
+  "species_diversity": {
+   "n_species": 7,
+   "shannon_index": 1.628,
+   "max_species_share": 0.347,
+   "trees_by_species": {
+    "Terminalia ivorensis": 140,
+    "Albizia zygia": 90,
+    "Alstonia boonei": 60,
+    "Newbouldia laevis": 56,
+    "Pterocarpus santalinoides": 45,
+    "Ceiba pentandra": 11,
+    "Mitragyna ciliata": 2
+   }
+  },
+  "sites": 180,
+  "trees": 404,
+  "planted_area_ha": 7.33,
+  "species_used": [
+   "Albizia zygia",
+   "Alstonia boonei",
+   "Ceiba pentandra",
+   "Mitragyna ciliata",
+   "Newbouldia laevis",
+   "Pterocarpus santalinoides",
+   "Terminalia ivorensis"
+  ],
+  "tco2_by_year": {
+   "5": 3.93,
+   "10": 27.51,
+   "20": 115.41
+  },
+  "cooling_planted_cells_c": {
+   "5": 0.059,
+   "10": 0.229,
+   "20": 0.311
+  },
+  "cooling_100m_c": {
+   "5": 0.051,
+   "10": 0.203,
+   "20": 0.277
+  },
+  "peak_cooling_c": {
+   "5": 0.23,
+   "10": 0.674,
+   "20": 0.911
+  },
+  "canopy_added_ha": {
+   "5": 0.777,
+   "10": 3.095,
+   "20": 4.227
+  },
+  "habitat_index": {
+   "baseline": 43.791,
+   "5": 44.127,
+   "10": 47.921,
+   "20": 48.357
+  },
+  "pollinator_taxa_supported": 11,
+  "pollinator_taxa": [
+   "beetles (Scarabaeidae/Nitidulidae)",
+   "butterflies (Lepidoptera)",
+   "carpenter bees (Xylocopa spp.)",
+   "flower flies and blow flies",
+   "fruit bats (Pteropodidae)",
+   "halictid sweat bees",
+   "hawkmoths (Sphingidae)",
+   "honey bees (Apis mellifera adansonii)",
+   "hoverflies (Syrphidae)",
+   "stingless bees (Meliponini)",
+   "sunbirds (Nectariniidae)"
+  ],
+  "sites_by_ward": {
+   "Demo Ward 8": 60,
+   "Demo Ward 9": 43,
+   "Demo Ward 6": 33,
+   "Demo Ward 4": 14,
+   "Demo Ward 12": 12,
+   "Demo Ward 7": 9,
+   "Demo Ward 11": 7,
+   "Demo Ward 5": 1,
+   "Demo Ward 2": 1
+  },
+  "equity": {
+   "share_of_trees_in_high_vulnerability_cells": 0.718,
+   "share_of_plantable_cells_high_vulnerability": 0.263
+  },
+  "canopy_cover_pct_before": 13.07,
+  "canopy_cover_pct_after_20yr": 14.11
+ },
+ "clusters": [
+  {
+   "cluster_id": "C133",
+   "n_sites": 5,
+   "trees": 17,
+   "area_ha": 0.2,
+   "species_mix": {
+    "Newbouldia laevis": 7,
+    "Pterocarpus santalinoides": 6,
+    "Albizia zygia": 2,
+    "Mitragyna ciliata": 2
+   },
+   "dominant_species": "Newbouldia laevis",
+   "dominant_common": "Akoko / Ogirisako",
+   "lon": 3.362413,
+   "lat": 6.492502,
+   "mean_equity": 0.619,
+   "mean_cooling_c": {
+    "5": 0.16,
+    "10": 0.45,
+    "20": 0.56
+   },
+   "pollinator_taxa": [
+    "beetles (Scarabaeidae/Nitidulidae)",
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "flower flies and blow flies",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)",
+    "stingless bees (Meliponini)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 9,
+   "tco2_20yr": 3.69,
+   "roi_statement": "Planting 17 native trees here (mostly Akoko / Ogirisako, Newbouldia laevis) is projected to cool the planted cells by about 0.6 \u00b0C by year 20 (range 0.3\u20130.8 \u00b0C), store ~3.7 tCO\u2082 and support 9 pollinator groups."
+  },
+  {
+   "cluster_id": "C135",
+   "n_sites": 3,
+   "trees": 12,
+   "area_ha": 0.12,
+   "species_mix": {
+    "Newbouldia laevis": 7,
+    "Pterocarpus santalinoides": 3,
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Newbouldia laevis",
+   "dominant_common": "Akoko / Ogirisako",
+   "lon": 3.363043,
+   "lat": 6.49231,
+   "mean_equity": 0.635,
+   "mean_cooling_c": {
+    "5": 0.18,
+    "10": 0.44,
+    "20": 0.49
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)",
+    "stingless bees (Meliponini)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 7,
+   "tco2_20yr": 2.42,
+   "roi_statement": "Planting 12 native trees here (mostly Akoko / Ogirisako, Newbouldia laevis) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~2.4 tCO\u2082 and support 7 pollinator groups."
+  },
+  {
+   "cluster_id": "C86",
+   "n_sites": 5,
+   "trees": 9,
+   "area_ha": 0.2,
+   "species_mix": {
+    "Terminalia ivorensis": 6,
+    "Albizia zygia": 2,
+    "Ceiba pentandra": 1
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.350981,
+   "lat": 6.501322,
+   "mean_equity": 0.765,
+   "mean_cooling_c": {
+    "5": 0.09,
+    "10": 0.44,
+    "20": 0.69
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "fruit bats (Pteropodidae)",
+    "halictid sweat bees",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)",
+    "stingless bees (Meliponini)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 9,
+   "tco2_20yr": 2.88,
+   "roi_statement": "Planting 9 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.7 \u00b0C by year 20 (range 0.4\u20131.0 \u00b0C), store ~2.9 tCO\u2082 and support 9 pollinator groups."
+  },
+  {
+   "cluster_id": "C134",
+   "n_sites": 1,
+   "trees": 7,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Newbouldia laevis": 7
+   },
+   "dominant_species": "Newbouldia laevis",
+   "dominant_common": "Akoko / Ogirisako",
+   "lon": 3.363968,
+   "lat": 6.49261,
+   "mean_equity": 0.663,
+   "mean_cooling_c": {
+    "5": 0.1,
+    "10": 0.19,
+    "20": 0.21
+   },
+   "pollinator_taxa": [
+    "carpenter bees (Xylocopa spp.)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 1.01,
+   "roi_statement": "Planting 7 native trees here (mostly Akoko / Ogirisako, Newbouldia laevis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~1.0 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C131",
+   "n_sites": 1,
+   "trees": 7,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Newbouldia laevis": 7
+   },
+   "dominant_species": "Newbouldia laevis",
+   "dominant_common": "Akoko / Ogirisako",
+   "lon": 3.363968,
+   "lat": 6.49297,
+   "mean_equity": 0.659,
+   "mean_cooling_c": {
+    "5": 0.1,
+    "10": 0.19,
+    "20": 0.21
+   },
+   "pollinator_taxa": [
+    "carpenter bees (Xylocopa spp.)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 1.01,
+   "roi_statement": "Planting 7 native trees here (mostly Akoko / Ogirisako, Newbouldia laevis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~1.0 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C138",
+   "n_sites": 1,
+   "trees": 7,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Newbouldia laevis": 7
+   },
+   "dominant_species": "Newbouldia laevis",
+   "dominant_common": "Akoko / Ogirisako",
+   "lon": 3.363783,
+   "lat": 6.49225,
+   "mean_equity": 0.651,
+   "mean_cooling_c": {
+    "5": 0.1,
+    "10": 0.19,
+    "20": 0.21
+   },
+   "pollinator_taxa": [
+    "carpenter bees (Xylocopa spp.)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 1.01,
+   "roi_statement": "Planting 7 native trees here (mostly Akoko / Ogirisako, Newbouldia laevis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~1.0 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C38",
+   "n_sites": 3,
+   "trees": 6,
+   "area_ha": 0.12,
+   "species_mix": {
+    "Albizia zygia": 4,
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.354163,
+   "lat": 6.50503,
+   "mean_equity": 0.83,
+   "mean_cooling_c": {
+    "5": 0.14,
+    "10": 0.42,
+    "20": 0.49
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 5,
+   "tco2_20yr": 1.91,
+   "roi_statement": "Planting 6 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~1.9 tCO\u2082 and support 5 pollinator groups."
+  },
+  {
+   "cluster_id": "C68",
+   "n_sites": 3,
+   "trees": 6,
+   "area_ha": 0.12,
+   "species_mix": {
+    "Terminalia ivorensis": 4,
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.354533,
+   "lat": 6.50299,
+   "mean_equity": 0.827,
+   "mean_cooling_c": {
+    "5": 0.08,
+    "10": 0.37,
+    "20": 0.53
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 6,
+   "tco2_20yr": 1.88,
+   "roi_statement": "Planting 6 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~1.9 tCO\u2082 and support 6 pollinator groups."
+  },
+  {
+   "cluster_id": "C137",
+   "n_sites": 1,
+   "trees": 7,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Newbouldia laevis": 7
+   },
+   "dominant_species": "Newbouldia laevis",
+   "dominant_common": "Akoko / Ogirisako",
+   "lon": 3.361747,
+   "lat": 6.49225,
+   "mean_equity": 0.586,
+   "mean_cooling_c": {
+    "5": 0.1,
+    "10": 0.19,
+    "20": 0.21
+   },
+   "pollinator_taxa": [
+    "carpenter bees (Xylocopa spp.)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 1.01,
+   "roi_statement": "Planting 7 native trees here (mostly Akoko / Ogirisako, Newbouldia laevis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~1.0 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C73",
+   "n_sites": 3,
+   "trees": 6,
+   "area_ha": 0.12,
+   "species_mix": {
+    "Alstonia boonei": 2,
+    "Albizia zygia": 2,
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.352683,
+   "lat": 6.50269,
+   "mean_equity": 0.703,
+   "mean_cooling_c": {
+    "5": 0.1,
+    "10": 0.4,
+    "20": 0.53
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 6,
+   "tco2_20yr": 1.89,
+   "roi_statement": "Planting 6 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~1.9 tCO\u2082 and support 6 pollinator groups."
+  },
+  {
+   "cluster_id": "C146",
+   "n_sites": 1,
+   "trees": 7,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Newbouldia laevis": 7
+   },
+   "dominant_species": "Newbouldia laevis",
+   "dominant_common": "Akoko / Ogirisako",
+   "lon": 3.351758,
+   "lat": 6.49063,
+   "mean_equity": 0.507,
+   "mean_cooling_c": {
+    "5": 0.1,
+    "10": 0.19,
+    "20": 0.21
+   },
+   "pollinator_taxa": [
+    "carpenter bees (Xylocopa spp.)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 1.01,
+   "roi_statement": "Planting 7 native trees here (mostly Akoko / Ogirisako, Newbouldia laevis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~1.0 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C124",
+   "n_sites": 2,
+   "trees": 6,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Pterocarpus santalinoides": 6
+   },
+   "dominant_species": "Pterocarpus santalinoides",
+   "dominant_common": "Gbengbe / Nanga",
+   "lon": 3.363783,
+   "lat": 6.49378,
+   "mean_equity": 0.619,
+   "mean_cooling_c": {
+    "5": 0.1,
+    "10": 0.36,
+    "20": 0.43
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 1.53,
+   "roi_statement": "Planting 6 native trees here (mostly Gbengbe / Nanga, Pterocarpus santalinoides) is projected to cool the planted cells by about 0.4 \u00b0C by year 20 (range 0.3\u20130.6 \u00b0C), store ~1.5 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C144",
+   "n_sites": 1,
+   "trees": 7,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Newbouldia laevis": 7
+   },
+   "dominant_species": "Newbouldia laevis",
+   "dominant_common": "Akoko / Ogirisako",
+   "lon": 3.362118,
+   "lat": 6.49117,
+   "mean_equity": 0.453,
+   "mean_cooling_c": {
+    "5": 0.1,
+    "10": 0.19,
+    "20": 0.21
+   },
+   "pollinator_taxa": [
+    "carpenter bees (Xylocopa spp.)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 1.01,
+   "roi_statement": "Planting 7 native trees here (mostly Akoko / Ogirisako, Newbouldia laevis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~1.0 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C129",
+   "n_sites": 2,
+   "trees": 5,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Pterocarpus santalinoides": 3,
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Pterocarpus santalinoides",
+   "dominant_common": "Gbengbe / Nanga",
+   "lon": 3.362765,
+   "lat": 6.49306,
+   "mean_equity": 0.657,
+   "mean_cooling_c": {
+    "5": 0.12,
+    "10": 0.36,
+    "20": 0.42
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 5,
+   "tco2_20yr": 1.4,
+   "roi_statement": "Planting 5 native trees here (mostly Gbengbe / Nanga, Pterocarpus santalinoides) is projected to cool the planted cells by about 0.4 \u00b0C by year 20 (range 0.3\u20130.6 \u00b0C), store ~1.4 tCO\u2082 and support 5 pollinator groups."
+  },
+  {
+   "cluster_id": "C51",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Alstonia boonei": 2,
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.354996,
+   "lat": 6.50395,
+   "mean_equity": 0.85,
+   "mean_cooling_c": {
+    "5": 0.06,
+    "10": 0.32,
+    "20": 0.47
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 1.26,
+   "roi_statement": "Planting 4 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~1.3 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C29",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Albizia zygia": 2,
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.356568,
+   "lat": 6.5062,
+   "mean_equity": 0.837,
+   "mean_cooling_c": {
+    "5": 0.1,
+    "10": 0.36,
+    "20": 0.44
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 5,
+   "tco2_20yr": 1.27,
+   "roi_statement": "Planting 4 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.4 \u00b0C by year 20 (range 0.3\u20130.6 \u00b0C), store ~1.3 tCO\u2082 and support 5 pollinator groups."
+  },
+  {
+   "cluster_id": "C42",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Alstonia boonei": 2,
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.356661,
+   "lat": 6.50494,
+   "mean_equity": 0.833,
+   "mean_cooling_c": {
+    "5": 0.06,
+    "10": 0.32,
+    "20": 0.47
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 1.26,
+   "roi_statement": "Planting 4 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~1.3 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C05",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Terminalia ivorensis": 2,
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.361286,
+   "lat": 6.50746,
+   "mean_equity": 0.826,
+   "mean_cooling_c": {
+    "5": 0.09,
+    "10": 0.33,
+    "20": 0.44
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 6,
+   "tco2_20yr": 1.26,
+   "roi_statement": "Planting 4 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.4 \u00b0C by year 20 (range 0.3\u20130.6 \u00b0C), store ~1.3 tCO\u2082 and support 6 pollinator groups."
+  },
+  {
+   "cluster_id": "C12",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Alstonia boonei": 2,
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.356105,
+   "lat": 6.5071,
+   "mean_equity": 0.821,
+   "mean_cooling_c": {
+    "5": 0.1,
+    "10": 0.36,
+    "20": 0.44
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 5,
+   "tco2_20yr": 1.27,
+   "roi_statement": "Planting 4 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.4 \u00b0C by year 20 (range 0.3\u20130.6 \u00b0C), store ~1.3 tCO\u2082 and support 5 pollinator groups."
+  },
+  {
+   "cluster_id": "C45",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Terminalia ivorensis": 4
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.360545,
+   "lat": 6.50476,
+   "mean_equity": 0.814,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.3,
+    "20": 0.47
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 1.24,
+   "roi_statement": "Planting 4 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~1.2 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C13",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Alstonia boonei": 4
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.360823,
+   "lat": 6.5071,
+   "mean_equity": 0.776,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.35,
+    "20": 0.47
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 1.27,
+   "roi_statement": "Planting 4 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~1.3 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C67",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Terminalia ivorensis": 4
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.353978,
+   "lat": 6.50296,
+   "mean_equity": 0.771,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.3,
+    "20": 0.47
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 1.24,
+   "roi_statement": "Planting 4 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~1.2 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C60",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Terminalia ivorensis": 4
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.35407,
+   "lat": 6.50341,
+   "mean_equity": 0.745,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.3,
+    "20": 0.47
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 1.24,
+   "roi_statement": "Planting 4 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~1.2 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C85",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Albizia zygia": 4
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.351758,
+   "lat": 6.50152,
+   "mean_equity": 0.732,
+   "mean_cooling_c": {
+    "5": 0.14,
+    "10": 0.36,
+    "20": 0.41
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 1.27,
+   "roi_statement": "Planting 4 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.4 \u00b0C by year 20 (range 0.2\u20130.6 \u00b0C), store ~1.3 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C82",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Albizia zygia": 4
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.351203,
+   "lat": 6.50188,
+   "mean_equity": 0.724,
+   "mean_cooling_c": {
+    "5": 0.14,
+    "10": 0.36,
+    "20": 0.41
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 1.27,
+   "roi_statement": "Planting 4 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.4 \u00b0C by year 20 (range 0.2\u20130.6 \u00b0C), store ~1.3 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C62",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Terminalia ivorensis": 4
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.35185,
+   "lat": 6.50314,
+   "mean_equity": 0.72,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.3,
+    "20": 0.47
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 1.24,
+   "roi_statement": "Planting 4 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~1.2 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C74",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Terminalia ivorensis": 2,
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.3537,
+   "lat": 6.5026,
+   "mean_equity": 0.685,
+   "mean_cooling_c": {
+    "5": 0.09,
+    "10": 0.33,
+    "20": 0.44
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 6,
+   "tco2_20yr": 1.26,
+   "roi_statement": "Planting 4 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.4 \u00b0C by year 20 (range 0.3\u20130.6 \u00b0C), store ~1.3 tCO\u2082 and support 6 pollinator groups."
+  },
+  {
+   "cluster_id": "C83",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Terminalia ivorensis": 2,
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.352035,
+   "lat": 6.50197,
+   "mean_equity": 0.675,
+   "mean_cooling_c": {
+    "5": 0.09,
+    "10": 0.33,
+    "20": 0.44
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 6,
+   "tco2_20yr": 1.26,
+   "roi_statement": "Planting 4 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.4 \u00b0C by year 20 (range 0.3\u20130.6 \u00b0C), store ~1.3 tCO\u2082 and support 6 pollinator groups."
+  },
+  {
+   "cluster_id": "C09",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Albizia zygia": 2,
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.350741,
+   "lat": 6.5071,
+   "mean_equity": 0.605,
+   "mean_cooling_c": {
+    "5": 0.1,
+    "10": 0.36,
+    "20": 0.44
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 5,
+   "tco2_20yr": 1.27,
+   "roi_statement": "Planting 4 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.4 \u00b0C by year 20 (range 0.3\u20130.6 \u00b0C), store ~1.3 tCO\u2082 and support 5 pollinator groups."
+  },
+  {
+   "cluster_id": "C02",
+   "n_sites": 2,
+   "trees": 4,
+   "area_ha": 0.08,
+   "species_mix": {
+    "Terminalia ivorensis": 4
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.35259,
+   "lat": 6.50755,
+   "mean_equity": 0.597,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.3,
+    "20": 0.47
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 1.24,
+   "roi_statement": "Planting 4 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.5 \u00b0C by year 20 (range 0.3\u20130.7 \u00b0C), store ~1.2 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C49",
+   "n_sites": 1,
+   "trees": 3,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Pterocarpus santalinoides": 3
+   },
+   "dominant_species": "Pterocarpus santalinoides",
+   "dominant_common": "Gbengbe / Nanga",
+   "lon": 3.356013,
+   "lat": 6.50431,
+   "mean_equity": 0.843,
+   "mean_cooling_c": {
+    "5": 0.05,
+    "10": 0.18,
+    "20": 0.22
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.77,
+   "roi_statement": "Planting 3 native trees here (mostly Gbengbe / Nanga, Pterocarpus santalinoides) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.8 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C52",
+   "n_sites": 1,
+   "trees": 3,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Pterocarpus santalinoides": 3
+   },
+   "dominant_species": "Pterocarpus santalinoides",
+   "dominant_common": "Gbengbe / Nanga",
+   "lon": 3.356013,
+   "lat": 6.50395,
+   "mean_equity": 0.839,
+   "mean_cooling_c": {
+    "5": 0.05,
+    "10": 0.18,
+    "20": 0.22
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.77,
+   "roi_statement": "Planting 3 native trees here (mostly Gbengbe / Nanga, Pterocarpus santalinoides) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.8 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C128",
+   "n_sites": 1,
+   "trees": 3,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Pterocarpus santalinoides": 3
+   },
+   "dominant_species": "Pterocarpus santalinoides",
+   "dominant_common": "Gbengbe / Nanga",
+   "lon": 3.363783,
+   "lat": 6.49333,
+   "mean_equity": 0.654,
+   "mean_cooling_c": {
+    "5": 0.05,
+    "10": 0.18,
+    "20": 0.22
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.77,
+   "roi_statement": "Planting 3 native trees here (mostly Gbengbe / Nanga, Pterocarpus santalinoides) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.8 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C132",
+   "n_sites": 1,
+   "trees": 3,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Pterocarpus santalinoides": 3
+   },
+   "dominant_species": "Pterocarpus santalinoides",
+   "dominant_common": "Gbengbe / Nanga",
+   "lon": 3.364523,
+   "lat": 6.49297,
+   "mean_equity": 0.654,
+   "mean_cooling_c": {
+    "5": 0.05,
+    "10": 0.18,
+    "20": 0.22
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.77,
+   "roi_statement": "Planting 3 native trees here (mostly Gbengbe / Nanga, Pterocarpus santalinoides) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.8 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C125",
+   "n_sites": 1,
+   "trees": 3,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Pterocarpus santalinoides": 3
+   },
+   "dominant_species": "Pterocarpus santalinoides",
+   "dominant_common": "Gbengbe / Nanga",
+   "lon": 3.363043,
+   "lat": 6.49369,
+   "mean_equity": 0.653,
+   "mean_cooling_c": {
+    "5": 0.05,
+    "10": 0.18,
+    "20": 0.22
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.77,
+   "roi_statement": "Planting 3 native trees here (mostly Gbengbe / Nanga, Pterocarpus santalinoides) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.8 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C141",
+   "n_sites": 1,
+   "trees": 3,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Pterocarpus santalinoides": 3
+   },
+   "dominant_species": "Pterocarpus santalinoides",
+   "dominant_common": "Gbengbe / Nanga",
+   "lon": 3.363412,
+   "lat": 6.49153,
+   "mean_equity": 0.588,
+   "mean_cooling_c": {
+    "5": 0.05,
+    "10": 0.18,
+    "20": 0.22
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.77,
+   "roi_statement": "Planting 3 native trees here (mostly Gbengbe / Nanga, Pterocarpus santalinoides) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.8 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C145",
+   "n_sites": 1,
+   "trees": 3,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Pterocarpus santalinoides": 3
+   },
+   "dominant_species": "Pterocarpus santalinoides",
+   "dominant_common": "Gbengbe / Nanga",
+   "lon": 3.367298,
+   "lat": 6.49081,
+   "mean_equity": 0.541,
+   "mean_cooling_c": {
+    "5": 0.05,
+    "10": 0.18,
+    "20": 0.22
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.77,
+   "roi_statement": "Planting 3 native trees here (mostly Gbengbe / Nanga, Pterocarpus santalinoides) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.8 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C140",
+   "n_sites": 1,
+   "trees": 3,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Pterocarpus santalinoides": 3
+   },
+   "dominant_species": "Pterocarpus santalinoides",
+   "dominant_common": "Gbengbe / Nanga",
+   "lon": 3.362858,
+   "lat": 6.49171,
+   "mean_equity": 0.531,
+   "mean_cooling_c": {
+    "5": 0.05,
+    "10": 0.18,
+    "20": 0.22
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.77,
+   "roi_statement": "Planting 3 native trees here (mostly Gbengbe / Nanga, Pterocarpus santalinoides) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.8 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C143",
+   "n_sites": 1,
+   "trees": 3,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Pterocarpus santalinoides": 3
+   },
+   "dominant_species": "Pterocarpus santalinoides",
+   "dominant_common": "Gbengbe / Nanga",
+   "lon": 3.368038,
+   "lat": 6.49135,
+   "mean_equity": 0.488,
+   "mean_cooling_c": {
+    "5": 0.05,
+    "10": 0.18,
+    "20": 0.22
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.77,
+   "roi_statement": "Planting 3 native trees here (mostly Gbengbe / Nanga, Pterocarpus santalinoides) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.8 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C44",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.355272,
+   "lat": 6.50485,
+   "mean_equity": 0.854,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C48",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.355272,
+   "lat": 6.50431,
+   "mean_equity": 0.854,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C53",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.355643,
+   "lat": 6.50377,
+   "mean_equity": 0.85,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C72",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.357677,
+   "lat": 6.50287,
+   "mean_equity": 0.849,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C06",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.362118,
+   "lat": 6.50755,
+   "mean_equity": 0.846,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C17",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.361747,
+   "lat": 6.50701,
+   "mean_equity": 0.843,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C50",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.356937,
+   "lat": 6.50431,
+   "mean_equity": 0.842,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C54",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.357123,
+   "lat": 6.50377,
+   "mean_equity": 0.842,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C55",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.357677,
+   "lat": 6.50377,
+   "mean_equity": 0.841,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C47",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.354532,
+   "lat": 6.50467,
+   "mean_equity": 0.84,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C39",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.354903,
+   "lat": 6.50521,
+   "mean_equity": 0.839,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C37",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.356753,
+   "lat": 6.50539,
+   "mean_equity": 0.833,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C41",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.356197,
+   "lat": 6.50503,
+   "mean_equity": 0.833,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C78",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.357123,
+   "lat": 6.50251,
+   "mean_equity": 0.827,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C31",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.355088,
+   "lat": 6.50593,
+   "mean_equity": 0.826,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C58",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.354532,
+   "lat": 6.50359,
+   "mean_equity": 0.824,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C25",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.355828,
+   "lat": 6.50647,
+   "mean_equity": 0.823,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C34",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.357308,
+   "lat": 6.50575,
+   "mean_equity": 0.822,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C22",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.355457,
+   "lat": 6.50665,
+   "mean_equity": 0.82,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C43",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.361007,
+   "lat": 6.50503,
+   "mean_equity": 0.814,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C23",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.356383,
+   "lat": 6.50665,
+   "mean_equity": 0.807,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C16",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.358973,
+   "lat": 6.50701,
+   "mean_equity": 0.806,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C28",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.354903,
+   "lat": 6.50629,
+   "mean_equity": 0.803,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C71",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.355643,
+   "lat": 6.50287,
+   "mean_equity": 0.802,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C33",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.356383,
+   "lat": 6.50575,
+   "mean_equity": 0.8,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C21",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.354903,
+   "lat": 6.50665,
+   "mean_equity": 0.797,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C27",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.361747,
+   "lat": 6.50647,
+   "mean_equity": 0.788,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C01",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.360082,
+   "lat": 6.50773,
+   "mean_equity": 0.779,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C08",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.358788,
+   "lat": 6.50737,
+   "mean_equity": 0.778,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C56",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.358973,
+   "lat": 6.50377,
+   "mean_equity": 0.777,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C40",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.358418,
+   "lat": 6.50521,
+   "mean_equity": 0.774,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C66",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.350462,
+   "lat": 6.50305,
+   "mean_equity": 0.77,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C61",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.351203,
+   "lat": 6.50323,
+   "mean_equity": 0.76,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C93",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.350648,
+   "lat": 6.50089,
+   "mean_equity": 0.759,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C69",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.350833,
+   "lat": 6.50287,
+   "mean_equity": 0.758,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C84",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.350278,
+   "lat": 6.50161,
+   "mean_equity": 0.753,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C30",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.359713,
+   "lat": 6.50611,
+   "mean_equity": 0.749,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C35",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.359158,
+   "lat": 6.50557,
+   "mean_equity": 0.745,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C77",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.356383,
+   "lat": 6.50251,
+   "mean_equity": 0.744,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C94",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.351018,
+   "lat": 6.50089,
+   "mean_equity": 0.741,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C64",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.353238,
+   "lat": 6.50323,
+   "mean_equity": 0.738,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C81",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.350648,
+   "lat": 6.50197,
+   "mean_equity": 0.738,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C65",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.353608,
+   "lat": 6.50323,
+   "mean_equity": 0.731,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C26",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.358418,
+   "lat": 6.50647,
+   "mean_equity": 0.725,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C63",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.352683,
+   "lat": 6.50323,
+   "mean_equity": 0.724,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C70",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.351203,
+   "lat": 6.50287,
+   "mean_equity": 0.723,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C75",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.351018,
+   "lat": 6.50251,
+   "mean_equity": 0.713,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C76",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.354532,
+   "lat": 6.50251,
+   "mean_equity": 0.713,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C32",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.361563,
+   "lat": 6.50593,
+   "mean_equity": 0.709,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C98",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.351203,
+   "lat": 6.49981,
+   "mean_equity": 0.705,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C87",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.352127,
+   "lat": 6.50143,
+   "mean_equity": 0.679,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C04",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.357862,
+   "lat": 6.50755,
+   "mean_equity": 0.674,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C127",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.362118,
+   "lat": 6.49351,
+   "mean_equity": 0.66,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C136",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.364708,
+   "lat": 6.49243,
+   "mean_equity": 0.649,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C118",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.362118,
+   "lat": 6.49549,
+   "mean_equity": 0.647,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C123",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.362303,
+   "lat": 6.49387,
+   "mean_equity": 0.642,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C119",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.362303,
+   "lat": 6.49477,
+   "mean_equity": 0.631,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C121",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.362303,
+   "lat": 6.49423,
+   "mean_equity": 0.631,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C122",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.363043,
+   "lat": 6.49423,
+   "mean_equity": 0.629,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C19",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.352313,
+   "lat": 6.50683,
+   "mean_equity": 0.608,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C130",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.361932,
+   "lat": 6.49297,
+   "mean_equity": 0.606,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C104",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.353238,
+   "lat": 6.49873,
+   "mean_equity": 0.603,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C15",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.351573,
+   "lat": 6.50701,
+   "mean_equity": 0.596,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C97",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.356753,
+   "lat": 6.50053,
+   "mean_equity": 0.596,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C03",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.353238,
+   "lat": 6.50755,
+   "mean_equity": 0.589,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C88",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.354348,
+   "lat": 6.50143,
+   "mean_equity": 0.584,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C102",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.352498,
+   "lat": 6.49891,
+   "mean_equity": 0.582,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C110",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.368038,
+   "lat": 6.49747,
+   "mean_equity": 0.582,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C18",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.351203,
+   "lat": 6.50683,
+   "mean_equity": 0.582,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C114",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.350833,
+   "lat": 6.49621,
+   "mean_equity": 0.58,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C113",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.351203,
+   "lat": 6.49657,
+   "mean_equity": 0.578,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C57",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.350833,
+   "lat": 6.50359,
+   "mean_equity": 0.578,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C101",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.353608,
+   "lat": 6.49909,
+   "mean_equity": 0.577,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C111",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.363783,
+   "lat": 6.49693,
+   "mean_equity": 0.575,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C112",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.367853,
+   "lat": 6.49693,
+   "mean_equity": 0.573,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C106",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.354903,
+   "lat": 6.49819,
+   "mean_equity": 0.57,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C109",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.350462,
+   "lat": 6.49783,
+   "mean_equity": 0.569,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C99",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.351018,
+   "lat": 6.49945,
+   "mean_equity": 0.566,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C96",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.355272,
+   "lat": 6.50053,
+   "mean_equity": 0.563,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C07",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.353978,
+   "lat": 6.50737,
+   "mean_equity": 0.558,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C108",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.354163,
+   "lat": 6.49801,
+   "mean_equity": 0.558,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C79",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.357677,
+   "lat": 6.50233,
+   "mean_equity": 0.558,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C20",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.352867,
+   "lat": 6.50683,
+   "mean_equity": 0.552,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C107",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.355272,
+   "lat": 6.49819,
+   "mean_equity": 0.548,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C116",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.351758,
+   "lat": 6.49585,
+   "mean_equity": 0.547,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C92",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.357677,
+   "lat": 6.50107,
+   "mean_equity": 0.536,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C95",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.365817,
+   "lat": 6.50071,
+   "mean_equity": 0.534,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C142",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.364337,
+   "lat": 6.49135,
+   "mean_equity": 0.533,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C100",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Alstonia boonei": 2
+   },
+   "dominant_species": "Alstonia boonei",
+   "dominant_common": "Ahun / Egbu",
+   "lon": 3.352313,
+   "lat": 6.49945,
+   "mean_equity": 0.521,
+   "mean_cooling_c": {
+    "5": 0.04,
+    "10": 0.18,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.63,
+   "roi_statement": "Planting 2 native trees here (mostly Ahun / Egbu, Alstonia boonei) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C10",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.353238,
+   "lat": 6.50719,
+   "mean_equity": 0.519,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C24",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.352867,
+   "lat": 6.50647,
+   "mean_equity": 0.51,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C105",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.350833,
+   "lat": 6.49819,
+   "mean_equity": 0.499,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C126",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.366003,
+   "lat": 6.49369,
+   "mean_equity": 0.499,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C36",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.350462,
+   "lat": 6.50539,
+   "mean_equity": 0.479,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C139",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.360267,
+   "lat": 6.49189,
+   "mean_equity": 0.476,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C103",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Terminalia ivorensis": 2
+   },
+   "dominant_species": "Terminalia ivorensis",
+   "dominant_common": "Idigbo",
+   "lon": 3.351943,
+   "lat": 6.49873,
+   "mean_equity": 0.475,
+   "mean_cooling_c": {
+    "5": 0.02,
+    "10": 0.15,
+    "20": 0.23
+   },
+   "pollinator_taxa": [
+    "halictid sweat bees",
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)"
+   ],
+   "n_pollinator_taxa": 3,
+   "tco2_20yr": 0.62,
+   "roi_statement": "Planting 2 native trees here (mostly Idigbo, Terminalia ivorensis) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 3 pollinator groups."
+  },
+  {
+   "cluster_id": "C80",
+   "n_sites": 1,
+   "trees": 2,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Albizia zygia": 2
+   },
+   "dominant_species": "Albizia zygia",
+   "dominant_common": "Ayinre / Okuro",
+   "lon": 3.367668,
+   "lat": 6.50215,
+   "mean_equity": 0.473,
+   "mean_cooling_c": {
+    "5": 0.07,
+    "10": 0.18,
+    "20": 0.2
+   },
+   "pollinator_taxa": [
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "honey bees (Apis mellifera adansonii)",
+    "hoverflies (Syrphidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.64,
+   "roi_statement": "Planting 2 native trees here (mostly Ayinre / Okuro, Albizia zygia) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.6 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C11",
+   "n_sites": 1,
+   "trees": 1,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Ceiba pentandra": 1
+   },
+   "dominant_species": "Ceiba pentandra",
+   "dominant_common": "Araba / Okha",
+   "lon": 3.355643,
+   "lat": 6.50719,
+   "mean_equity": 0.839,
+   "mean_cooling_c": {
+    "5": 0.01,
+    "10": 0.12,
+    "20": 0.24
+   },
+   "pollinator_taxa": [
+    "fruit bats (Pteropodidae)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.38,
+   "roi_statement": "Planting 1 native trees here (mostly Araba / Okha, Ceiba pentandra) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.4 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C14",
+   "n_sites": 1,
+   "trees": 1,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Ceiba pentandra": 1
+   },
+   "dominant_species": "Ceiba pentandra",
+   "dominant_common": "Araba / Okha",
+   "lon": 3.363043,
+   "lat": 6.50719,
+   "mean_equity": 0.786,
+   "mean_cooling_c": {
+    "5": 0.01,
+    "10": 0.12,
+    "20": 0.24
+   },
+   "pollinator_taxa": [
+    "fruit bats (Pteropodidae)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.38,
+   "roi_statement": "Planting 1 native trees here (mostly Araba / Okha, Ceiba pentandra) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.4 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C90",
+   "n_sites": 1,
+   "trees": 1,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Ceiba pentandra": 1
+   },
+   "dominant_species": "Ceiba pentandra",
+   "dominant_common": "Araba / Okha",
+   "lon": 3.351573,
+   "lat": 6.50107,
+   "mean_equity": 0.735,
+   "mean_cooling_c": {
+    "5": 0.01,
+    "10": 0.12,
+    "20": 0.24
+   },
+   "pollinator_taxa": [
+    "fruit bats (Pteropodidae)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.38,
+   "roi_statement": "Planting 1 native trees here (mostly Araba / Okha, Ceiba pentandra) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.4 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C59",
+   "n_sites": 1,
+   "trees": 1,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Ceiba pentandra": 1
+   },
+   "dominant_species": "Ceiba pentandra",
+   "dominant_common": "Araba / Okha",
+   "lon": 3.352313,
+   "lat": 6.50341,
+   "mean_equity": 0.726,
+   "mean_cooling_c": {
+    "5": 0.01,
+    "10": 0.12,
+    "20": 0.24
+   },
+   "pollinator_taxa": [
+    "fruit bats (Pteropodidae)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.38,
+   "roi_statement": "Planting 1 native trees here (mostly Araba / Okha, Ceiba pentandra) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.4 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C46",
+   "n_sites": 1,
+   "trees": 1,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Ceiba pentandra": 1
+   },
+   "dominant_species": "Ceiba pentandra",
+   "dominant_common": "Araba / Okha",
+   "lon": 3.352683,
+   "lat": 6.50467,
+   "mean_equity": 0.673,
+   "mean_cooling_c": {
+    "5": 0.01,
+    "10": 0.12,
+    "20": 0.24
+   },
+   "pollinator_taxa": [
+    "fruit bats (Pteropodidae)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.38,
+   "roi_statement": "Planting 1 native trees here (mostly Araba / Okha, Ceiba pentandra) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.4 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C115",
+   "n_sites": 1,
+   "trees": 1,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Ceiba pentandra": 1
+   },
+   "dominant_species": "Ceiba pentandra",
+   "dominant_common": "Araba / Okha",
+   "lon": 3.363043,
+   "lat": 6.49621,
+   "mean_equity": 0.623,
+   "mean_cooling_c": {
+    "5": 0.01,
+    "10": 0.12,
+    "20": 0.24
+   },
+   "pollinator_taxa": [
+    "fruit bats (Pteropodidae)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.38,
+   "roi_statement": "Planting 1 native trees here (mostly Araba / Okha, Ceiba pentandra) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.4 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C91",
+   "n_sites": 1,
+   "trees": 1,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Ceiba pentandra": 1
+   },
+   "dominant_species": "Ceiba pentandra",
+   "dominant_common": "Araba / Okha",
+   "lon": 3.353052,
+   "lat": 6.50107,
+   "mean_equity": 0.614,
+   "mean_cooling_c": {
+    "5": 0.01,
+    "10": 0.12,
+    "20": 0.24
+   },
+   "pollinator_taxa": [
+    "fruit bats (Pteropodidae)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.38,
+   "roi_statement": "Planting 1 native trees here (mostly Araba / Okha, Ceiba pentandra) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.4 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C120",
+   "n_sites": 1,
+   "trees": 1,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Ceiba pentandra": 1
+   },
+   "dominant_species": "Ceiba pentandra",
+   "dominant_common": "Araba / Okha",
+   "lon": 3.363968,
+   "lat": 6.49477,
+   "mean_equity": 0.576,
+   "mean_cooling_c": {
+    "5": 0.01,
+    "10": 0.12,
+    "20": 0.24
+   },
+   "pollinator_taxa": [
+    "fruit bats (Pteropodidae)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.38,
+   "roi_statement": "Planting 1 native trees here (mostly Araba / Okha, Ceiba pentandra) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.4 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C89",
+   "n_sites": 1,
+   "trees": 1,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Ceiba pentandra": 1
+   },
+   "dominant_species": "Ceiba pentandra",
+   "dominant_common": "Araba / Okha",
+   "lon": 3.355828,
+   "lat": 6.50143,
+   "mean_equity": 0.562,
+   "mean_cooling_c": {
+    "5": 0.01,
+    "10": 0.12,
+    "20": 0.24
+   },
+   "pollinator_taxa": [
+    "fruit bats (Pteropodidae)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.38,
+   "roi_statement": "Planting 1 native trees here (mostly Araba / Okha, Ceiba pentandra) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.4 tCO\u2082 and support 4 pollinator groups."
+  },
+  {
+   "cluster_id": "C117",
+   "n_sites": 1,
+   "trees": 1,
+   "area_ha": 0.04,
+   "species_mix": {
+    "Ceiba pentandra": 1
+   },
+   "dominant_species": "Ceiba pentandra",
+   "dominant_common": "Araba / Okha",
+   "lon": 3.367113,
+   "lat": 6.49567,
+   "mean_equity": 0.527,
+   "mean_cooling_c": {
+    "5": 0.01,
+    "10": 0.12,
+    "20": 0.24
+   },
+   "pollinator_taxa": [
+    "fruit bats (Pteropodidae)",
+    "hawkmoths (Sphingidae)",
+    "honey bees (Apis mellifera adansonii)",
+    "sunbirds (Nectariniidae)"
+   ],
+   "n_pollinator_taxa": 4,
+   "tco2_20yr": 0.38,
+   "roi_statement": "Planting 1 native trees here (mostly Araba / Okha, Ceiba pentandra) is projected to cool the planted cells by about 0.2 \u00b0C by year 20 (range 0.1\u20130.3 \u00b0C), store ~0.4 tCO\u2082 and support 4 pollinator groups."
+  }
+ ],
+ "simulation": {
+  "series": [
+   {
+    "year": 0,
+    "canopy_added_ha": 0.0,
+    "mean_cooling_planted_c": 0.0,
+    "peak_cooling_c": 0.0,
+    "mean_cooling_100m_c": 0.0,
+    "tco2_cumulative": 0.0,
+    "habitat_index_mean": 43.791,
+    "habitat_index_gain_in_ring": 0.0
+   },
+   {
+    "year": 1,
+    "canopy_added_ha": 0.053,
+    "mean_cooling_planted_c": 0.004,
+    "peak_cooling_c": 0.018,
+    "mean_cooling_100m_c": 0.003,
+    "tco2_cumulative": 0.12,
+    "habitat_index_mean": 43.811,
+    "habitat_index_gain_in_ring": 0.156
+   },
+   {
+    "year": 2,
+    "canopy_added_ha": 0.14,
+    "mean_cooling_planted_c": 0.011,
+    "peak_cooling_c": 0.046,
+    "mean_cooling_100m_c": 0.009,
+    "tco2_cumulative": 0.44,
+    "habitat_index_mean": 43.845,
+    "habitat_index_gain_in_ring": 0.412
+   },
+   {
+    "year": 3,
+    "canopy_added_ha": 0.277,
+    "mean_cooling_planted_c": 0.021,
+    "peak_cooling_c": 0.089,
+    "mean_cooling_100m_c": 0.018,
+    "tco2_cumulative": 1.07,
+    "habitat_index_mean": 43.898,
+    "habitat_index_gain_in_ring": 0.816
+   },
+   {
+    "year": 4,
+    "canopy_added_ha": 0.485,
+    "mean_cooling_planted_c": 0.037,
+    "peak_cooling_c": 0.151,
+    "mean_cooling_100m_c": 0.032,
+    "tco2_cumulative": 2.17,
+    "habitat_index_mean": 44.014,
+    "habitat_index_gain_in_ring": 1.602
+   },
+   {
+    "year": 5,
+    "canopy_added_ha": 0.777,
+    "mean_cooling_planted_c": 0.059,
+    "peak_cooling_c": 0.23,
+    "mean_cooling_100m_c": 0.051,
+    "tco2_cumulative": 3.93,
+    "habitat_index_mean": 44.127,
+    "habitat_index_gain_in_ring": 2.463
+   },
+   {
+    "year": 6,
+    "canopy_added_ha": 1.16,
+    "mean_cooling_planted_c": 0.087,
+    "peak_cooling_c": 0.323,
+    "mean_cooling_100m_c": 0.076,
+    "tco2_cumulative": 6.54,
+    "habitat_index_mean": 44.439,
+    "habitat_index_gain_in_ring": 4.206
+   },
+   {
+    "year": 7,
+    "canopy_added_ha": 1.621,
+    "mean_cooling_planted_c": 0.121,
+    "peak_cooling_c": 0.421,
+    "mean_cooling_100m_c": 0.106,
+    "tco2_cumulative": 10.16,
+    "habitat_index_mean": 45.378,
+    "habitat_index_gain_in_ring": 8.52
+   },
+   {
+    "year": 8,
+    "canopy_added_ha": 2.128,
+    "mean_cooling_planted_c": 0.159,
+    "peak_cooling_c": 0.515,
+    "mean_cooling_100m_c": 0.14,
+    "tco2_cumulative": 14.88,
+    "habitat_index_mean": 45.87,
+    "habitat_index_gain_in_ring": 11.304
+   },
+   {
+    "year": 9,
+    "canopy_added_ha": 2.636,
+    "mean_cooling_planted_c": 0.196,
+    "peak_cooling_c": 0.601,
+    "mean_cooling_100m_c": 0.173,
+    "tco2_cumulative": 20.7,
+    "habitat_index_mean": 47.57,
+    "habitat_index_gain_in_ring": 18.291
+   },
+   {
+    "year": 10,
+    "canopy_added_ha": 3.095,
+    "mean_cooling_planted_c": 0.229,
+    "peak_cooling_c": 0.674,
+    "mean_cooling_100m_c": 0.203,
+    "tco2_cumulative": 27.51,
+    "habitat_index_mean": 47.921,
+    "habitat_index_gain_in_ring": 20.129
+   },
+   {
+    "year": 11,
+    "canopy_added_ha": 3.469,
+    "mean_cooling_planted_c": 0.256,
+    "peak_cooling_c": 0.733,
+    "mean_cooling_100m_c": 0.227,
+    "tco2_cumulative": 35.11,
+    "habitat_index_mean": 48.065,
+    "habitat_index_gain_in_ring": 21.228
+   },
+   {
+    "year": 12,
+    "canopy_added_ha": 3.744,
+    "mean_cooling_planted_c": 0.276,
+    "peak_cooling_c": 0.777,
+    "mean_cooling_100m_c": 0.246,
+    "tco2_cumulative": 43.29,
+    "habitat_index_mean": 48.171,
+    "habitat_index_gain_in_ring": 22.039
+   },
+   {
+    "year": 13,
+    "canopy_added_ha": 3.932,
+    "mean_cooling_planted_c": 0.289,
+    "peak_cooling_c": 0.823,
+    "mean_cooling_100m_c": 0.258,
+    "tco2_cumulative": 51.87,
+    "habitat_index_mean": 48.244,
+    "habitat_index_gain_in_ring": 22.591
+   },
+   {
+    "year": 14,
+    "canopy_added_ha": 4.053,
+    "mean_cooling_planted_c": 0.298,
+    "peak_cooling_c": 0.858,
+    "mean_cooling_100m_c": 0.266,
+    "tco2_cumulative": 60.69,
+    "habitat_index_mean": 48.29,
+    "habitat_index_gain_in_ring": 22.946
+   },
+   {
+    "year": 15,
+    "canopy_added_ha": 4.127,
+    "mean_cooling_planted_c": 0.303,
+    "peak_cooling_c": 0.881,
+    "mean_cooling_100m_c": 0.271,
+    "tco2_cumulative": 69.68,
+    "habitat_index_mean": 48.319,
+    "habitat_index_gain_in_ring": 23.164
+   },
+   {
+    "year": 16,
+    "canopy_added_ha": 4.171,
+    "mean_cooling_planted_c": 0.307,
+    "peak_cooling_c": 0.894,
+    "mean_cooling_100m_c": 0.274,
+    "tco2_cumulative": 78.75,
+    "habitat_index_mean": 48.336,
+    "habitat_index_gain_in_ring": 23.295
+   },
+   {
+    "year": 17,
+    "canopy_added_ha": 4.198,
+    "mean_cooling_planted_c": 0.309,
+    "peak_cooling_c": 0.902,
+    "mean_cooling_100m_c": 0.275,
+    "tco2_cumulative": 87.88,
+    "habitat_index_mean": 48.346,
+    "habitat_index_gain_in_ring": 23.372
+   },
+   {
+    "year": 18,
+    "canopy_added_ha": 4.213,
+    "mean_cooling_planted_c": 0.31,
+    "peak_cooling_c": 0.907,
+    "mean_cooling_100m_c": 0.276,
+    "tco2_cumulative": 97.04,
+    "habitat_index_mean": 48.352,
+    "habitat_index_gain_in_ring": 23.418
+   },
+   {
+    "year": 19,
+    "canopy_added_ha": 4.222,
+    "mean_cooling_planted_c": 0.31,
+    "peak_cooling_c": 0.91,
+    "mean_cooling_100m_c": 0.277,
+    "tco2_cumulative": 106.22,
+    "habitat_index_mean": 48.355,
+    "habitat_index_gain_in_ring": 23.444
+   },
+   {
+    "year": 20,
+    "canopy_added_ha": 4.227,
+    "mean_cooling_planted_c": 0.311,
+    "peak_cooling_c": 0.911,
+    "mean_cooling_100m_c": 0.277,
+    "tco2_cumulative": 115.41,
+    "habitat_index_mean": 48.357,
+    "habitat_index_gain_in_ring": 23.459
+   }
+  ],
+  "assumptions": {
+   "establishment_survival": 0.8,
+   "cooling_c_per_10pct_canopy": 0.35,
+   "cooling_uncertainty_pct": 40,
+   "max_local_cooling_c": 2.5,
+   "cooling_window_m": 61,
+   "cell_size_m": 20.2,
+   "note": "Coefficients are literature-informed planning assumptions to be calibrated against local temperature loggers before decisions rely on the absolute numbers."
+  }
+ },
+ "species_rejected": [
+  {
+   "scientific": "Azadirachta indica",
+   "common": "Neem / Dogonyaro",
+   "status": "invasive",
+   "water_demand": "low",
+   "reason": "Invasive: displaces native flora (do no harm)"
+  },
+  {
+   "scientific": "Eucalyptus camaldulensis",
+   "common": "Eucalyptus",
+   "status": "invasive",
+   "water_demand": "high",
+   "reason": "Invasive: displaces native flora (do no harm); High water demand: unsustainable in a water-stressed city"
+  },
+  {
+   "scientific": "Prosopis juliflora",
+   "common": "Mesquite",
+   "status": "invasive",
+   "water_demand": "low",
+   "reason": "Invasive: displaces native flora (do no harm)"
+  },
+  {
+   "scientific": "Delonix regia",
+   "common": "Flamboyant / Royal poinciana",
+   "status": "exotic",
+   "water_demand": "moderate",
+   "reason": "Exotic / ornamental: low habitat value for native fauna"
+  },
+  {
+   "scientific": "Roystonea regia",
+   "common": "Royal palm",
+   "status": "exotic",
+   "water_demand": "high",
+   "reason": "Exotic / ornamental: low habitat value for native fauna; High water demand: unsustainable in a water-stressed city"
+  },
+  {
+   "scientific": "Casuarina equisetifolia",
+   "common": "Beach sheoak",
+   "status": "invasive",
+   "water_demand": "low",
+   "reason": "Invasive: displaces native flora (do no harm)"
+  }
+ ],
+ "notes": [
+  "Cells with no zoning polygon are treated as unplantable ('unzoned')."
+ ],
+ "timings": {
+  "segmentation_s": 10.46,
+  "optimisation_s": 12.64,
+  "simulation_s": 0.05,
+  "total_s": 23.17
+ },
+ "model": {
+  "classes": [
+   "concrete",
+   "canopy",
+   "bare_soil"
+  ]
+ },
+ "sites_first_5": [
+  {
+   "site_id": "S001",
+   "cluster_id": "C103",
+   "lon": 3.351943,
+   "lat": 6.49873,
+   "row": 51,
+   "col": 10,
+   "species": "Terminalia ivorensis",
+   "common_name": "Idigbo",
+   "stems": 2,
+   "soil": "loam",
+   "zone": "residential_high",
+   "flood_prone": false,
+   "equity_priority": 0.475,
+   "heat_excess": 0.881,
+   "ward": "Demo Ward 11",
+   "species_fit": 0.881,
+   "tco2_20yr": 0.622,
+   "pollinator_taxa": [
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)",
+    "halictid sweat bees"
+   ],
+   "horizons": {
+    "5": {
+     "crown_radius_m": 2.14,
+     "canopy_gain_pct": 5.6,
+     "cooling_c": 0.022,
+     "cooling_range_c": [
+      0.013,
+      0.031
+     ],
+     "habitat_index": 30.9
+    },
+    "10": {
+     "crown_radius_m": 5.56,
+     "canopy_gain_pct": 38.2,
+     "cooling_c": 0.149,
+     "cooling_range_c": [
+      0.089,
+      0.208
+     ],
+     "habitat_index": 43.2
+    },
+    "20": {
+     "crown_radius_m": 6.99,
+     "canopy_gain_pct": 60.4,
+     "cooling_c": 0.235,
+     "cooling_range_c": [
+      0.141,
+      0.329
+     ],
+     "habitat_index": 47.1
+    }
+   },
+   "rationale": "Idigbo (Terminalia ivorensis) is native and suits loam soil; has a crown that fits tight plots between buildings; sits in one of the hottest parts of the tile."
+  },
+  {
+   "site_id": "S002",
+   "cluster_id": "C136",
+   "lon": 3.364708,
+   "lat": 6.49243,
+   "row": 86,
+   "col": 79,
+   "species": "Albizia zygia",
+   "common_name": "Ayinre / Okuro",
+   "stems": 2,
+   "soil": "sandy",
+   "zone": "residential_high",
+   "flood_prone": true,
+   "equity_priority": 0.649,
+   "heat_excess": 0.928,
+   "ward": "Demo Ward 6",
+   "species_fit": 0.521,
+   "tco2_20yr": 0.637,
+   "pollinator_taxa": [
+    "honey bees (Apis mellifera adansonii)",
+    "butterflies (Lepidoptera)",
+    "carpenter bees (Xylocopa spp.)",
+    "hoverflies (Syrphidae)"
+   ],
+   "horizons": {
+    "5": {
+     "crown_radius_m": 3.8,
+     "canopy_gain_pct": 17.9,
+     "cooling_c": 0.069,
+     "cooling_range_c": [
+      0.042,
+      0.097
+     ],
+     "habitat_index": 9.8
+    },
+    "10": {
+     "crown_radius_m": 6.15,
+     "canopy_gain_pct": 46.8,
+     "cooling_c": 0.182,
+     "cooling_range_c": [
+      0.109,
+      0.255
+     ],
+     "habitat_index": 23.7
+    },
+    "20": {
+     "crown_radius_m": 6.5,
+     "canopy_gain_pct": 52.1,
+     "cooling_c": 0.203,
+     "cooling_range_c": [
+      0.122,
+      0.284
+     ],
+     "habitat_index": 24.7
+    }
+   },
+   "rationale": "Ayinre / Okuro (Albizia zygia) is native and suits sandy soil; tolerates the periodic flooding of this low-lying cell; has a crown that fits tight plots between buildings; serves a heat-vulnerable, canopy-poor neighbourhood; sits in one of the hottest parts of the tile."
+  },
+  {
+   "site_id": "S003",
+   "cluster_id": "C45",
+   "lon": 3.360453,
+   "lat": 6.50485,
+   "row": 17,
+   "col": 56,
+   "species": "Terminalia ivorensis",
+   "common_name": "Idigbo",
+   "stems": 2,
+   "soil": "loam",
+   "zone": "residential_high",
+   "flood_prone": false,
+   "equity_priority": 0.812,
+   "heat_excess": 0.947,
+   "ward": "Demo Ward 8",
+   "species_fit": 0.881,
+   "tco2_20yr": 0.622,
+   "pollinator_taxa": [
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)",
+    "halictid sweat bees"
+   ],
+   "horizons": {
+    "5": {
+     "crown_radius_m": 2.14,
+     "canopy_gain_pct": 5.6,
+     "cooling_c": 0.044,
+     "cooling_range_c": [
+      0.026,
+      0.062
+     ],
+     "habitat_index": 17.5
+    },
+    "10": {
+     "crown_radius_m": 5.56,
+     "canopy_gain_pct": 38.2,
+     "cooling_c": 0.297,
+     "cooling_range_c": [
+      0.178,
+      0.416
+     ],
+     "habitat_index": 35.6
+    },
+    "20": {
+     "crown_radius_m": 6.99,
+     "canopy_gain_pct": 60.4,
+     "cooling_c": 0.469,
+     "cooling_range_c": [
+      0.282,
+      0.657
+     ],
+     "habitat_index": 43.3
+    }
+   },
+   "rationale": "Idigbo (Terminalia ivorensis) is native and suits loam soil; has a crown that fits tight plots between buildings; serves a heat-vulnerable, canopy-poor neighbourhood; sits in one of the hottest parts of the tile."
+  },
+  {
+   "site_id": "S004",
+   "cluster_id": "C01",
+   "lon": 3.360082,
+   "lat": 6.50773,
+   "row": 1,
+   "col": 54,
+   "species": "Terminalia ivorensis",
+   "common_name": "Idigbo",
+   "stems": 2,
+   "soil": "loam",
+   "zone": "residential_low",
+   "flood_prone": false,
+   "equity_priority": 0.779,
+   "heat_excess": 0.917,
+   "ward": "Demo Ward 8",
+   "species_fit": 0.881,
+   "tco2_20yr": 0.622,
+   "pollinator_taxa": [
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)",
+    "halictid sweat bees"
+   ],
+   "horizons": {
+    "5": {
+     "crown_radius_m": 2.14,
+     "canopy_gain_pct": 5.6,
+     "cooling_c": 0.022,
+     "cooling_range_c": [
+      0.013,
+      0.031
+     ],
+     "habitat_index": 9.9
+    },
+    "10": {
+     "crown_radius_m": 5.56,
+     "canopy_gain_pct": 38.2,
+     "cooling_c": 0.149,
+     "cooling_range_c": [
+      0.089,
+      0.208
+     ],
+     "habitat_index": 20.0
+    },
+    "20": {
+     "crown_radius_m": 6.99,
+     "canopy_gain_pct": 60.4,
+     "cooling_c": 0.235,
+     "cooling_range_c": [
+      0.141,
+      0.329
+     ],
+     "habitat_index": 23.9
+    }
+   },
+   "rationale": "Idigbo (Terminalia ivorensis) is native and suits loam soil; has a crown that fits tight plots between buildings; serves a heat-vulnerable, canopy-poor neighbourhood; sits in one of the hottest parts of the tile."
+  },
+  {
+   "site_id": "S005",
+   "cluster_id": "C86",
+   "lon": 3.351203,
+   "lat": 6.50125,
+   "row": 37,
+   "col": 6,
+   "species": "Terminalia ivorensis",
+   "common_name": "Idigbo",
+   "stems": 2,
+   "soil": "loam",
+   "zone": "residential_low",
+   "flood_prone": false,
+   "equity_priority": 0.762,
+   "heat_excess": 0.926,
+   "ward": "Demo Ward 9",
+   "species_fit": 0.881,
+   "tco2_20yr": 0.622,
+   "pollinator_taxa": [
+    "honey bees (Apis mellifera adansonii)",
+    "stingless bees (Meliponini)",
+    "halictid sweat bees"
+   ],
+   "horizons": {
+    "5": {
+     "crown_radius_m": 2.14,
+     "canopy_gain_pct": 5.6,
+     "cooling_c": 0.105,
+     "cooling_range_c": [
+      0.063,
+      0.147
+     ],
+     "habitat_index": 11.4
+    },
+    "10": {
+     "crown_radius_m": 5.56,
+     "canopy_gain_pct": 38.2,
+     "cooling_c": 0.45,
+     "cooling_range_c": [
+      0.27,
+      0.63
+     ],
+     "habitat_index": 53.5
+    },
+    "20": {
+     "crown_radius_m": 6.99,
+     "canopy_gain_pct": 60.4,
+     "cooling_c": 0.677,
+     "cooling_range_c": [
+      0.406,
+      0.947
+     ],
+     "habitat_index": 63.7
+    }
+   },
+   "rationale": "Idigbo (Terminalia ivorensis) is native and suits loam soil; has a crown that fits tight plots between buildings; serves a heat-vulnerable, canopy-poor neighbourhood; sits in one of the hottest parts of the tile."
+  }
+ ]
+}

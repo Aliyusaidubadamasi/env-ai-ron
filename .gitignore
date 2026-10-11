@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+node_modules/
+.DS_Store
+# Regenerated locally: `python -m app.train_segmenter` and the demo-data generator
+backend/models/
+backend/data/
